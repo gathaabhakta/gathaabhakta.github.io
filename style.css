@@ -1,0 +1,256 @@
+/* Styles for the Homepage */
+/* Gatha A. Bhakta-Web Basics Project */
+/* Text styles were kept same for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+/* You will notice I used Flexbox technique to create this webpage, the link to the tutorial I referenced:https://www.youtube.com/watch?v=JJSoEo8JSnc&t=633s */
+
+/* I added borders to elements to just get an idea of the container wrapping, I turned the border width to 0px to hide it */
+* {
+    border: solid;
+    border-width: 0px;
+    margin: 0px;
+}
+/* header style */
+.header{
+    padding: 0px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: black;
+    position: fixed;
+}
+/* H1 Tag styling */
+/* about cursor:pointer, I learnt about it from online forums, source: "" */
+.heading1 {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor:pointer;
+}
+.heading1:hover{
+    color: #DF48BD;
+}
+/* This style is for the navigation bar text, I referred to YouTube Videos while trying to stylize the Navigation Bar. */
+/* The link to the video is here:  */ 
+
+/* Here, I am trying to get all the list items in the same line by adding a display attribute to the header tag */
+/* Navigation Bar Content Styling */
+ul .MenuItems{
+    margin: 0px;
+    padding: 0px;
+}
+.MenuItems li { 
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    justify-content:space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-color: black;
+}
+a{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: underline;
+}
+#site {
+    background-color: #FFF64B;   
+    border-left-width: 1px;
+}
+#Legends{
+    border-right-width: 0px;
+}
+/* Button Styling the background-color and border-color are intentionally same*/
+button {
+    background-color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+    margin-right: 0px;
+    float: right;
+    cursor:pointer;   
+}
+/* I am adding some hover effects to the 'Subscribe' Button to make the design visually interesting */
+button:hover {
+    background-color: #88FC79;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+}
+/* This is the styling for the contents */
+.main{
+    display: flex;
+    width: 50%;
+    height: 650px;
+    flex-direction: row;
+}
+.matter {
+    font-family: 'Sora', sans-serif;
+    background-color: #88FC79;
+    font-size: 64px;
+    padding-top: 150px;
+    padding-right: 83px;
+    padding-left: 32px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    flex:1;
+    border-color: black;
+}
+#subtext {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 16px 0px 16px 16px;
+    background-color: #080700;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-top: 48px;
+    width: 650px;
+    text-align: left;
+}
+img{
+    display: flex;
+    flex:1;
+    border-left-width:3px;
+    max-width: 732px;
+    height: 650px;
+    padding-top:64px;
+    align-items: center;
+    background-color: #DF48BD;
+    border-color: #080700;
+    border-right-width: 0px; 
+}
+#tablelist{
+    display: flex;
+    font-family: 'Sora', sans-serif;
+    position:relative;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 0px;
+    border-top-width: 3px;
+    flex-direction: row;
+}
+.List {
+    width: 100%;
+    background-color: #FFF64B;
+    margin-top: 0px;
+    border-right-width: 3px;
+    flex-direction: row;
+    flex: 1;
+    padding-right: 52px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.List p{
+    font-size: 36px;
+    padding: 10px 0px 10px 20px;
+
+}
+
+.List li{
+    font-size: 20px;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+table {
+    position:relative;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    text-align:left;
+    border-color: #080700;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color:transparent;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    border-width: 0px;
+}
+td{
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+}
+.term {
+    background-color: #FFF64B;
+    color: #080700;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* This is the styling for the footer */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.marquee{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    text-align: center;
+}

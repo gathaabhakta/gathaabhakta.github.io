@@ -1,0 +1,210 @@
+/* Styles for the Urban.html */
+/* Gatha A. Bhakta-Web Basics Project */
+/* Text styles were kept same for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+/* You will notice I used Flexbox technique to create this webpage, the link to the tutorial I referenced:https://www.youtube.com/watch?v=JJSoEo8JSnc&t=633s */
+
+/* I added borders to elements to just get an idea of the container wrapping, I turned the border width to 0px to hide it */
+* {
+    border: solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 0px;
+    margin: 0px;
+}
+/* header style */
+header{
+    padding: 0px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: black;
+    position: fixed;
+}
+
+/* H1 Tag styling */
+/* about cursor:pointer, I learnt about it from online forums, source: "" */
+.heading1 {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor:pointer;
+}
+.heading1:hover{
+    color: #DF48BD;
+}
+/* This style is for the navigation bar text, I referred to YouTube Videos while trying to stylize the Navigation Bar. */
+/* The link to the video is here:  */ 
+
+/* Here, I am trying to get all the list items in the same line by adding a display attribute to the header tag */
+/* Navigation Bar Content Styling */
+ul .MenuItems{
+    margin: 0px;
+    padding: 0px;
+}
+.MenuItems li { 
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    justify-content:space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-color: black;
+}
+a{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: underline;
+}
+#site {
+    background-color: #ffffff;   
+    border-left-width: 0px;
+}
+#Cryptids{
+    border-left-width: 1px ;
+    border-right-width: 0px;
+}
+#state{
+    border-right-width: 0px;
+}
+#Legends{
+    background-color:#FFF64B;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+/* Button Styling the background-color and border-color are intentionally same*/
+button {
+    background-color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+    margin-right: 0px;
+    float: right;
+    cursor:pointer;
+    
+}
+a>button{ 
+    background-color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    border-right-width: 3px;
+    color: rgb(255, 255, 255);
+}
+
+/* I am adding some hover effects to the 'Subscribe' Button to make the design visually interesting */
+button:hover {
+    background-color: #DF48BD;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+}
+/* For Div Class Text1 */
+div{
+    font-family: 'Sora', sans-serif;
+    background-color:#88FC79;
+    width: 100%;
+    height: 750px;
+}
+.Text1 h2{
+    color: #000000;
+    width:50%;
+    text-align: left;
+    font-size: 72px;
+    padding-left: 16px;
+    font-family: 'Sora', sans-serif;
+    padding-top: 140px;
+}
+.Text1 p{
+    font-size: 24px;
+    width: 50%;
+    color:#000000;
+    font-weight: 100;
+    padding-left: 16px;
+    padding-top: 32px;
+}
+.intro2{
+    width: 50%;
+    text-align: justify;
+}
+li{
+    color: #000000;
+}
+li:hover{
+    color: #DF48BD;
+}
+#JCD:hover{
+    color: #DF48BD;
+    font-size:24px ;
+    font-weight: 100;
+}
+
+/* This is the styling for the footer */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.marquee{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    text-align: center;
+}

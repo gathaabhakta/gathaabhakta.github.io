@@ -1,0 +1,282 @@
+/* Styles for the Ningen Page */
+/* Gatha A. Bhakta-Web Basics Project */
+/* Text styles were kept same for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+/* You will notice I used Flexbox technique to create this webpage, the link to the tutorial I referenced:https://www.youtube.com/watch?v=JJSoEo8JSnc&t=633s */
+
+/* I added borders to elements to just get an idea of the container wrapping, I turned the border width to 0px to hide it */
+* {
+    border: white solid;
+    border-width: 0px;
+    margin: 0px;
+}
+/* header style */
+.header{
+    padding: 0px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: black;
+    position: fixed;
+}
+/* H1 Tag styling */
+/* about cursor:pointer, I learnt about it from online forums, source: "" */
+.heading1 {
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor:pointer;
+}
+.heading1:hover{
+    color: #4680C6;
+}
+/* This style is for the navigation bar text, I referred to YouTube Videos while trying to stylize the Navigation Bar. */
+/* The link to the video is here:  */ 
+
+/* Here, I am trying to get all the list items in the same line by adding a display attribute to the header tag */
+/* Navigation Bar Content Styling */
+ul .MenuItems{
+    margin: 0px;
+    padding: 0px;
+}
+.MenuItems li { 
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    justify-content:space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-color: black;
+}
+a{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    color: black;
+    text-decoration: underline;
+}
+#site {
+    background-color: #ffffff;   
+    border-left-width: 0px;
+}
+#Cryptids{
+    background-color:#E2DBF9;
+    border-left-width: 1px ;
+}
+#state{
+    border-right-width: 0px;
+}
+#Legends{
+    border-right-width: 0px;
+}
+/* Button Styling the background-color and border-color are intentionally same*/
+button {
+    background-color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+    margin-right: 0px;
+    float: right;
+    cursor:pointer;   
+}
+/* I am adding some hover effects to the 'Subscribe' Button to make the design visually interesting */
+button:hover {
+    background-color: #E2DBF9;
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: underline;
+    color: #000000;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top-width: 0px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-color: black;
+}
+/* This is the styling for the contents */
+.nin1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 750px;
+    padding: 0px;
+    background-color: #4680C6;
+}
+.textnin1{
+    font-family: 'Sora', sans-serif;
+    background-color: #4680C6;
+    width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.textnin{
+    font-size: 64px;
+    margin-top: 114px;
+    padding-top: 0px;
+    font-weight: 200;
+    color: #E2DBF9;
+    text-align: left;
+}
+
+.about{
+    font-family: 'Sora', sans-serif;
+    font-size: 32px;
+    color:#E2DBF9;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0%;
+    padding-top: 8px;
+    font-weight: 150;
+    width: 100%;
+    text-align: left;
+}
+.info1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    color: #E2DBF9;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0%;
+    padding-top: 8px;
+    width: 100%;
+    margin-right: 32px;
+    text-align: justify;
+}
+img{
+    flex: 1;
+    width: 50%;
+    margin-top:96px;
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    border-left-width: 3px;
+    border-color: black;
+    background-color: #4680C6;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#about{
+    font-family: 'Sora', sans-serif;
+    margin-top: 32px;
+    font-size: 32px;
+    color:#E2DBF9;
+    position: relative;
+    margin-left: 0%;
+    padding-top: 8px;
+    font-weight: 150;
+    width: 100%;
+    text-align: left;
+}
+#sketch{
+    font-family: 'Sora', sans-serif;
+    margin-top: 32px;
+    font-size: 32px;
+    color:#E2DBF9;
+    position: relative;
+    margin-left: 0%;
+    padding-top: 8px;
+    font-weight: 150;
+    width: 100%;
+    text-align: left;
+}
+#ref {
+    font-size: 16px;
+    color: #E2DBF9;
+    text-decoration:underline;
+}
+#ref:hover{
+    background-color: #E2DBF9;
+    color: #4680C6;
+    border-radius: 8px;
+}
+/* Here is the table styling */
+table{
+    margin-top: 8px;
+}
+th{
+    text-align: left;
+    background-color:transparent;
+    background-color: #E2DBF9;
+    color: #4680C6;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+
+}
+td{
+    background-color: #ffffff;
+    text-align: left;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+/* This is the styling for the footer */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.marquee{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    text-align: center;
+}
